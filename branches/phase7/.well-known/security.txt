@@ -1,0 +1,10 @@
+# Security.txt — https://poolbuyr.com/.well-known/security.txt
+# For reporting vulnerabilities in the Poolbuyr platform:
+
+Contact: mailto:security@poolbuyr.com
+Preferred-Languages: en, nl
+Canonical: https://poolbuyr.com/.well-known/security.txt
+Policy: https://poolbuyr.com/.well-known/security.txt
+
+# This server is a self-hosted NUC. We appreciate responsible disclosure.
+# We aim to acknowledge reports within 72 hours.
