@@ -1,6 +1,6 @@
 const u=`---
 title: "5 Household Essentials You're Overpaying for by Shopping Alone"
-author: "Marcus Vance"
+author: "Pieter van der Meer"
 date: "2026-07-15"
 slug: "5-household-essentials-overpaying"
 excerpt: "Solo shopping comes with a hidden markup. Here's where collective purchasing saves the most — from paper towels to pantry staples."
@@ -53,7 +53,7 @@ The numbers don't lie. For the average household, converting to **pool-based pur
 
 Retail margins aren't magic. They're a tax on fragmentation. The moment you aggregate demand through a **collective purchasing pool**, you bypass that entire layer of cost. You're not being cheap—you're being **logistically efficient**. And in my book, that's the only real bargain. For inspiration on what other groups are pooling and saving on, check out the [community buying opportunities on poolbuyr.com](https://poolbuyr.com/discover).`,c=`---
 title: "One Shared Delivery vs. Ten Separate Vans: The Carbon Comparison"
-author: "Elena Rostova"
+author: "Friedrich Weber"
 date: "2026-07-13"
 slug: "shared-delivery-carbon-comparison"
 excerpt: "Ten vans, one street, one afternoon. The carbon math of last-mile fragmentation is brutal — but consolidated delivery changes everything."
@@ -136,7 +136,7 @@ That’s not a theory. That’s 28.2 kg of CO₂ that stayed in the ground.
 
 *Elena Rostova is an environmental scientist specializing in circular economies and urban logistics. She previously led field research on last-mile emission patterns for the European Environmental Bureau.*`,d=`---
 title: "Why Some Buying Groups Fail (And What to Learn From Them)"
-author: "Sarah Jenkins"
+author: "Emma Hartley"
 date: "2026-07-20"
 slug: "why-some-buying-groups-fail"
 excerpt: "Some community buying groups crash and burn. Here's what I've learned from watching co-ops dissolve — and how to make yours thrive."
@@ -211,5 +211,5 @@ And that's the real secret: a successful buying pool isn't just about saving mon
 
 So go ahead. Start that order. Gather your people. But do it with your eyes open, with a plan in place, and with the understanding that every great community co‑op is built not on hope alone, but on the sturdy scaffolding of clear logistics, fair rules, and shared responsibility.
 
-That's how you build something that lasts.`;function p(i){const n=i.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);if(!n)throw new Error("Missing frontmatter");const l=n[1],h=n[2].trim(),o={};let t="",e=[];for(const s of l.split(`
-`)){const r=s.match(/^(\w+):\s*(.*)/);if(r){if(t&&e.length&&(o[t]=e.length>1?e:e[0]),t=r[1],e=[],t==="tags")continue;const a=r[2].trim();a&&e.push(a.replace(/^"(.*)"$/,"$1"))}else if(t==="tags"){const a=s.match(/^\s+-\s+(.*)/);a&&e.push(a[1].trim())}else if(t){const a=s.trim();a&&e.push(a.replace(/^"(.*)"$/,"$1"))}}return t&&e.length&&(o[t]=e.length>1?e:e[0]),{meta:{title:String(o.title||""),author:String(o.author||""),date:String(o.date||""),slug:String(o.slug||""),excerpt:String(o.excerpt||""),tags:Array.isArray(o.tags)?o.tags:[],published:o.published!==!1},content:h}}export{d as _,c as a,u as b,p};
+That's how you build something that lasts.`;function p(i){const n=i.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);if(!n)throw new Error("Missing frontmatter");const l=n[1],h=n[2].trim(),o={};let t="",e=[];for(const r of l.split(`
+`)){const s=r.match(/^(\w+):\s*(.*)/);if(s){if(t&&e.length&&(o[t]=e.length>1?e:e[0]),t=s[1],e=[],t==="tags")continue;const a=s[2].trim();a&&e.push(a.replace(/^"(.*)"$/,"$1"))}else if(t==="tags"){const a=r.match(/^\s+-\s+(.*)/);a&&e.push(a[1].trim())}else if(t){const a=r.trim();a&&e.push(a.replace(/^"(.*)"$/,"$1"))}}return t&&e.length&&(o[t]=e.length>1?e:e[0]),{meta:{title:String(o.title||""),author:String(o.author||""),date:String(o.date||""),slug:String(o.slug||""),excerpt:String(o.excerpt||""),tags:Array.isArray(o.tags)?o.tags:[],published:o.published!==!1},content:h}}export{d as _,c as a,u as b,p};
