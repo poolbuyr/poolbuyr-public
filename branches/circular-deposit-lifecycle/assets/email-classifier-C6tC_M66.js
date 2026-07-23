@@ -1,8 +1,0 @@
-import{p as h,e as l}from"./pipelines-CQ045Fru.js";const b="Xenova/LaMini-Flan-T5-248M",g=typeof window<"u"&&/^poolbuyr\.com$/.test(window.location.hostname);l.remoteHost=g?"https://api.poolbuyr.com:444/hf/":"/hf/";l.allowLocalModels=!1;l.useBrowserCache=!1;let i=null,c=null,M=[];function u(e){M.forEach(s=>s(e))}async function m(){return i||c||(c=(async()=>(i=await h("text2text-generation",b,{progress_callback:e=>{e.status==="progress"&&typeof e.progress=="number"&&u(Math.round(e.progress*100))}}),u(100),i))(),c)}m();const f=["ordered","processed","dispatched","received"],S=`Map this email to the closest order state. States: ordered (new order placed), processed (payment done, preparing), dispatched (shipped, in transit), received (delivered).
-Payment errors, refunds, cancellations → processed.
-Delays, exceptions → dispatched.
-Status inquiries, reminders → ordered.
-
-Subject: {subject}
-Body: {body}
-State:`;let n=null;async function x(e,s){var r;const t=`${e}|${s.slice(0,100)}`;if(n!=null&&n.has(t))return n.get(t);try{const d=await Promise.race([m(),new Promise((a,y)=>setTimeout(()=>y(new Error("timeout")),1e4))]);if(!d)return null;const w=S.replace("{subject}",e.slice(0,200)).replace("{body}",s.slice(0,800)),p=(((r=(await d(w,{max_new_tokens:50,do_sample:!1,temperature:0}))[0])==null?void 0:r.generated_text)||"").toLowerCase();let o=f.find(a=>new RegExp("\\b"+a+"\\b").test(p));if(o||(o=f.find(a=>p.includes(a))),o)return n||(n=new Map),n.set(t,o),o}catch{}return null}async function E(e){const s={};for(const t of e){if(t.orderState)continue;const r=await x(t.subject,t.body||"");r&&(s[t.id]=r)}return s}export{x as a,E as c};
