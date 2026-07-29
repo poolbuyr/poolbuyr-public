@@ -1,8 +1,0 @@
-# Poolbuyr — pre-launch
-# Site is behind a password gate; block all crawlers.
-# When the password gate is removed, swap to:
-#   User-agent: *
-#   Allow: /
-#   Sitemap: https://poolbuyr.com/sitemap.xml
-User-agent: *
-Disallow: /
