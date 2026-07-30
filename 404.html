@@ -39,7 +39,7 @@
       .bd-trigger-label { font-size: 10.5px !important; }
     </style>
     <script>
-    (function(){var o=new MutationObserver(function(){var b=document.querySelector('.bd-trigger'),p=document.querySelector('input[type="password"]');if(b&&p){b.style.display='none';o.disconnect()}if(b&&!p)o.disconnect()});o.observe(document.body||document.documentElement,{childList:true,subtree:true});setTimeout(function(){o.disconnect()},1e4)})();
+    (function(){var i=setInterval(function(){var b=document.querySelector('.bd-trigger'),p=document.querySelector('input[type="password"]');if(b&&p){b.style.display='none'}else if(b&&!p){b.style.display=''}},200);setTimeout(function(){clearInterval(i)},3e4)})();
     </script>
   </body>
 </html>
