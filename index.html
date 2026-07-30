@@ -31,16 +31,17 @@
   <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
   <body class="bg-earth-50 text-gray-900">
     <div id="root"></div>
-    <!-- BugDrop — visual bug reporting widget (after body for DOM access) -->
-    <script src="https://bugs.poolbuyr.com:444/widget.js" data-repo="poolbuyr/poolbuyr-public" data-theme="light" data-position="bottom-right" data-color="#059669" data-icon="none" data-label="Report a bug" data-shadow="soft"></script>
+    <!-- BugDrop — visual bug reporting widget (only when past password gate) -->
+    <script>
+    if (sessionStorage.getItem('poolbuyr_access_granted') === 'true') {
+      document.write('<script src="https://bugs.poolbuyr.com:444/widget.js" data-repo="poolbuyr/poolbuyr-public" data-theme="light" data-position="bottom-right" data-color="#059669" data-icon="none" data-label="Report a bug" data-shadow="soft"><\/script>');
+    }
+    </script>
     <style>
       .bd-trigger { padding: 2px 6px !important; font-size: 10.5px !important; border-radius: 3px !important; opacity: 0.65 !important; }
       .bd-trigger:hover { opacity: 1 !important; }
       .bd-trigger-label { font-size: 10.5px !important; }
     </style>
-    <script>
-    (function(){var i=setInterval(function(){var b=document.querySelector('.bd-trigger'),p=document.querySelector('input[type="password"]');if(b&&p){b.style.display='none'}else if(b&&!p){b.style.display=''}},200);setTimeout(function(){clearInterval(i)},3e4)})();
-    </script>
   </body>
 </html>
 <!-- CI validation: Wed Jul 22 14:00:23 UTC 2026 -->
