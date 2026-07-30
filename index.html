@@ -41,7 +41,7 @@
     </style>
     <script>
     if (sessionStorage.getItem('poolbuyr_access_granted') === 'true') {
-      (function(){var i=setInterval(function(){var b=document.querySelector('.bd-trigger');if(b){b.classList.add('bd-visible');clearInterval(i)}},50);setTimeout(function(){clearInterval(i)},3e3)})();
+      (function(){var i=setInterval(function(){var b=document.querySelector('.bd-trigger'),p=document.querySelector('input[type="password"]');if(b&&!p){b.classList.add('bd-visible');clearInterval(i)}else if(b&&p){clearInterval(i)}},50);setTimeout(function(){clearInterval(i)},3e3)})();
     }
     </script>
   </body>
