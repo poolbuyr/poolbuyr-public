@@ -26,24 +26,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/index-PWT9HIlN.js"></script>
+    <script type="module" crossorigin src="/assets/index-B6ky4lyK.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CUneTQSQ.css">
   <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
   <body class="bg-earth-50 text-gray-900">
     <div id="root"></div>
-    <!-- BugDrop — visual bug reporting widget (hidden by default, shown when past pw gate) -->
-    <script src="https://bugs.poolbuyr.com:444/widget.js" data-repo="poolbuyr/poolbuyr-public" data-theme="light" data-position="bottom-right" data-color="#059669" data-icon="none" data-label="Report a bug" data-shadow="soft"></script>
-    <style>
-      .bd-trigger { display: none !important; }
-      .bd-trigger.bd-visible { display: flex !important; padding: 2px 6px !important; font-size: 10.5px !important; border-radius: 3px !important; opacity: 0.65 !important; }
-      .bd-trigger.bd-visible:hover { opacity: 1 !important; }
-      .bd-trigger.bd-visible .bd-trigger-label { font-size: 10.5px !important; }
-    </style>
+    <!-- BugDrop — loaded by PasswordGate React component after gate pass -->
     <script>
+    window.loadBugDrop = function() {
+      var s = document.createElement('script');
+      s.src = 'https://bugs.poolbuyr.com:444/widget.js';
+      s.setAttribute('data-repo', 'poolbuyr/poolbuyr-public');
+      s.setAttribute('data-theme', 'light');
+      s.setAttribute('data-position', 'bottom-right');
+      s.setAttribute('data-color', '#059669');
+      s.setAttribute('data-icon', 'none');
+      s.setAttribute('data-label', 'Bugs');
+      s.setAttribute('data-shadow', 'soft');
+      document.body.appendChild(s);
+    };
     if (sessionStorage.getItem('poolbuyr_access_granted') === 'true') {
-      (function(){var i=setInterval(function(){var b=document.querySelector('.bd-trigger'),p=document.querySelector('input[type="password"]');if(b&&!p){b.classList.add('bd-visible');clearInterval(i)}else if(b&&p){clearInterval(i)}},50);setTimeout(function(){clearInterval(i)},3e3)})();
+      window.loadBugDrop();
     }
     </script>
+    <style>
+      .bd-trigger { padding: 2px 6px !important; font-size: 10.5px !important; border-radius: 3px !important; opacity: 0.65 !important; }
+      .bd-trigger:hover { opacity: 1 !important; }
+      .bd-trigger-label { font-size: 10.5px !important; }
+    </style>
   </body>
 </html>
 <!-- CI validation: Wed Jul 22 14:00:23 UTC 2026 -->
