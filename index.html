@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/index-BGPNevEX.js"></script>
+    <script type="module" crossorigin src="/assets/index-jmLP9u1b.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CvvsmVD5.css">
   <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
   <body class="bg-earth-50 text-gray-900">
@@ -45,16 +45,33 @@
       s.setAttribute('data-shadow', 'soft');
       s.setAttribute('data-welcome', 'never');
       document.body.appendChild(s);
+
+      // The widget renders its trigger inside a Shadow DOM (host id="bugdrop-host"),
+      // so page-level CSS can't reach it — inject sizing + position into the
+      // shadow root directly once the host exists. bottom: 25vh = a quarter up.
+      var tries = 0;
+      var timer = setInterval(function() {
+        var host = document.getElementById('bugdrop-host');
+        if (host && host.shadowRoot) {
+          clearInterval(timer);
+          var style = document.createElement('style');
+          style.textContent =
+            '.bd-trigger{height:auto!important;min-height:0!important;padding:2px 6px!important;' +
+            'font-size:10.5px!important;line-height:1.4!important;border-radius:3px!important;' +
+            'opacity:.65!important;bottom:25vh!important;' +
+            'transform-origin:bottom right!important;}' +
+            '.bd-trigger:hover{opacity:1!important}' +
+            '.bd-trigger-label{font-size:10.5px!important;line-height:1.4!important;padding:0!important}';
+          host.shadowRoot.appendChild(style);
+        } else if (++tries > 100) {
+          clearInterval(timer);
+        }
+      }, 100);
     };
     if (sessionStorage.getItem('poolbuyr_access_granted') === 'true') {
       window.loadBugDrop();
     }
     </script>
-    <style>
-      .bd-trigger { padding: 2px 6px !important; font-size: 10.5px !important; height: auto !important; min-height: 0 !important; line-height: 1.4 !important; border-radius: 3px !important; opacity: 0.65 !important; bottom: 15vh !important; }
-      .bd-trigger:hover { opacity: 1 !important; }
-      .bd-trigger-label { font-size: 10.5px !important; line-height: 1.4 !important; }
-    </style>
   </body>
 </html>
 <!-- CI validation: Wed Jul 22 14:00:23 UTC 2026 -->
