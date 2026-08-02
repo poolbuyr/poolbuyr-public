@@ -33,54 +33,27 @@
     <div id="root"></div>
     <!-- BugDrop — loaded by PasswordGate React component after gate pass -->
     <script>
-    // Guard against the widget being loaded twice (PasswordGate + the
-    // sessionStorage auto-load on reload) — a double load renders two buttons.
-    if (!window._bugdropLoaded) {
-      window._bugdropLoaded = true;
-      window.loadBugDrop = function() {
-        // Never run more than once — a second run appends the widget script
-        // again and renders a duplicate button.
-        if (window._bugdropStarted) return;
-        window._bugdropStarted = true;
-        var s = document.createElement('script');
-        s.src = 'https://bugs.poolbuyr.com:444/widget.js';
-        s.setAttribute('data-repo', 'poolbuyr/poolbuyr-public');
-        s.setAttribute('data-theme', 'light');
-        s.setAttribute('data-position', 'bottom-right');
-        s.setAttribute('data-color', '#059669');
-        s.setAttribute('data-icon', 'none');
-        s.setAttribute('data-label', 'Bugs');
-        s.setAttribute('data-shadow', 'soft');
-        s.setAttribute('data-welcome', 'never');
-        document.body.appendChild(s);
-
-        // The widget renders its trigger inside a Shadow DOM (host id="bugdrop-host"),
-        // so page-level CSS can't reach it — inject sizing + position into the
-        // shadow root directly once the host exists. bottom: 25vh = a quarter up.
-        var tries = 0;
-        var timer = setInterval(function() {
-          var host = document.getElementById('bugdrop-host');
-          if (host && host.shadowRoot) {
-            clearInterval(timer);
-            var style = document.createElement('style');
-            style.textContent =
-              '.bd-trigger{height:auto!important;min-height:0!important;padding:2px 10px!important;' +
-              'font-size:10.5px!important;line-height:1.4!important;border-radius:9999px 0 0 9999px!important;' +
-              'opacity:.65!important;bottom:25vh!important;' +
-              'transform-origin:bottom right!important;}' +
-              '.bd-trigger:hover{opacity:1!important}' +
-              '.bd-trigger-label{font-size:10.5px!important;line-height:1.4!important;padding:0!important}';
-            host.shadowRoot.appendChild(style);
-          } else if (++tries > 100) {
-            clearInterval(timer);
-          }
-        }, 100);
-      };
-      if (sessionStorage.getItem('poolbuyr_access_granted') === 'true') {
-        window.loadBugDrop();
-      }
+    window.loadBugDrop = function() {
+      var s = document.createElement('script');
+      s.src = 'https://bugs.poolbuyr.com:444/widget.js';
+      s.setAttribute('data-repo', 'poolbuyr/poolbuyr-public');
+      s.setAttribute('data-theme', 'light');
+      s.setAttribute('data-position', 'bottom-right');
+      s.setAttribute('data-color', '#059669');
+      s.setAttribute('data-icon', 'none');
+      s.setAttribute('data-label', 'Bugs');
+      s.setAttribute('data-shadow', 'soft');
+      document.body.appendChild(s);
+    };
+    if (sessionStorage.getItem('poolbuyr_access_granted') === 'true') {
+      window.loadBugDrop();
     }
     </script>
+    <style>
+      .bd-trigger { padding: 2px 6px !important; font-size: 10.5px !important; border-radius: 3px !important; opacity: 0.65 !important; }
+      .bd-trigger:hover { opacity: 1 !important; }
+      .bd-trigger-label { font-size: 10.5px !important; }
+    </style>
   </body>
 </html>
 <!-- CI validation: Wed Jul 22 14:00:23 UTC 2026 -->
