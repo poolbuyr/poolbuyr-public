@@ -26,8 +26,20 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://poolbuyr.com/blog/case-study-a-single-pallet-of-firewood-saved-this-street-200-each</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://poolbuyr.com/blog/collective-purchasing-packaging-waste</loc>
     <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://poolbuyr.com/blog/collective-purchasing-the-last-mile-fix-that-saves-real-money</loc>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -38,8 +50,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://poolbuyr.com/blog/group-buying-math-how-one-utrecht-street-cut-1-200-delivery-trips-and-found-neig</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://poolbuyr.com/blog/group-buying-myths-debunked</loc>
     <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://poolbuyr.com/blog/product-quality-in-bulk-does-buying-wholesale-mean-settling-for-less</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://poolbuyr.com/blog/what-happens-to-your-delivery-emissions-when-you-pool-orders</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
