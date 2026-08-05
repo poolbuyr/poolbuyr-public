@@ -51,7 +51,7 @@ A single household's switch from ten individual online orders to a pooled monthl
 You don't need to become a zero-waste household to make a dent. Just take the routine stuff — cleaning supplies, toilet paper, coffee, pasta, pet food — and buy it once a month with a few neighbours instead of weekly and solo. [Start a pool](https://poolbuyr.com/pools/create) or [join one near you](https://poolbuyr.com/discover), and the packaging saving comes along almost for free.
 
 The next time you're about to check out a single roll of kitchen towel online, picture the machine in the warehouse sizing up a box to put that box inside another box, so a van can drive it across town on its own. That's the system we've all quietly normalised. Buying together is the simplest way to un-normalise it — one collective purchase at a time.
-`,c=`---
+`,p=`---
 title: "Free Shipping Isn't Free: How Group Buying Cuts Both Your Bill and Your Carbon Footprint"
 author: "Friedrich Weber"
 date: "2026-08-09"
@@ -164,61 +164,7 @@ This is the one I had to unlearn myself. The people in buying groups aren't coup
 Group buying isn't for everything. It's wrong for fresh produce, for "I need it tonight", and for people who genuinely enjoy the solo shop. But for the boring middle of household essentials — rice, coffee, detergent, toilet paper — it works. [The Sustain toolkit](https://www.sustainweb.org/foodcoopstoolkit/buyingclubs/) has been helping people run these clubs for years, which tells you the model long predates any app.
 
 The myths survive because the idea sounds complicated in the abstract. In practice it's one of the simplest coordination problems there is: a few people who want the same thing, buying it at once, splitting the difference. [Start a pool](https://poolbuyr.com/pools/create) with one product and two neighbours, and see for yourself whether the savings show up. I was skeptical too.
-`,p=`---
-title: "Group Buying vs. the MOQ Wall: How Collective Purchasing Unlocks Wholesale for Households"
-author: "Pieter van der Meer"
-date: "2026-08-02"
-slug: "group-buying-vs-the-moq-wall-how-collective-purchasing-unlocks-wholesale-for-hou"
-excerpt: "I once watched a pallet of roasted coffee sit in a freight depot because the buyer's minimum order was 500 kilograms and the cafe that ordered it only needed forty. That single metric is why group buying exists."
-tags:
-  - group-buying
-published: true
----
-# Group Buying vs. the MOQ Wall: How Collective Purchasing Unlocks Wholesale for Households
-
-I once watched a pallet of roasted coffee sit in a freight depot for three days because the buyer’s minimum order was 500 kilograms and the café that ordered it only needed forty. The pallet wasn’t the problem. The minimum order quantity (MOQ) was. That single metric is why group buying exists, and why most households never see wholesale pricing. It’s also why collective purchasing has become one of the most practical ways for ordinary people to access bulk discounts without owning a warehouse.
-
-The myth I want to bust is simple: wholesale is for businesses, restaurants, and people with forklifts. Households don’t qualify. The reality has less to do with fairness than with freight math. When you understand that, group buying stops sounding like a clever hack and starts sounding like the logical response to an inefficient default. It’s collective purchasing with the same mechanics a freight coordinator uses every day: consolidate volume, clear the threshold, and share the savings.
-
-![Group buying consolidates household orders to reach wholesale MOQ thresholds](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=60)
-
-## What an MOQ really is: a freight math problem, not a business-only rule
-
-An MOQ isn’t a conspiracy. It’s a calculation. If a supplier packs rice in 25-kilogram sacks and ships them on pallets of 200, they can’t justify repacking a single two-kilogram bag for you. Picking, packing, and freight costs would eat their margin. So they set a floor. Order above it and you get wholesale. Order below it and you pay retail.
-
-I’ve seen MOQs do strange things. One produce supplier refused to sell fewer than 15 cases of avocados. A textile importer I worked with wouldn’t touch an order under $3,000. None of these rules come from greed. They come from the inefficiency of selling small amounts to small buyers. The effect, though, is the same: the individual shopper gets locked out of bulk pricing.
-
-The lockout isn’t personal. It’s cubic volume, load consolidation, and picking cost. A warehouse needs to move product in units that cover the labor of pulling, packing, and dispatching. That logic makes sense at the supplier level. It only falls apart when you apply it to a single household that wants, say, four kilograms of rice, a box of pasta, and nine cans of tomatoes. Retail distribution exists to serve that scale, but it prices out the wholesale advantage.
-
-This is where collective purchasing comes in. When a community co-op or buying group aggregates those small orders, the supplier sees a different customer: not one household, but a purchasing node with the volume of a small business. That distinction changes every number in the price calculation.
-
-## How group buying pools demand to clear wholesale thresholds and unlock bulk savings
-
-A buying group does what the freight industry has always done: consolidates volume. On [poolbuyr.com](https://poolbuyr.com/pools/create), a group of people combine their individual needs into one larger order. One person wants five kilograms of flour. Another wants eight. A third wants twelve. Separately, none qualifies for a 200-kilogram bulk threshold. Pooled together, they clear it — and everyone pays the wholesale rate.
-
-That’s the entire trick. Not complicated, just coordinated. Food co-ops have existed for over a century, but the internet has made organizing them dramatically easier. A buying group needs a target threshold, a window for contributions, and someone to aggregate orders, consolidate freight, and distribute goods. This isn’t a hobbyist’s fantasy; it’s a logistics exercise — the kind I ran on spreadsheets for years. The fuel is volume. The engine is trust.
-
-The savings on the other side of an MOQ aren’t marginal. A 1977 [New York Times report found that joining a food co-op saved members roughly 40 percent](https://www.nytimes.com/1977/03/19/archives/the-saving-graces-about-40-percent-of-joining-a-food-cooperative.html). The economics haven’t shifted; they’ve gotten sharper. In Preston, UK, [food-buying groups routinely take at least a third off the weekly shop](https://prestoncoopdevelopment.org/food-buying-groups/). A broader look at [1,528 people across 35 food-buying clubs](https://pmc.ncbi.nlm.nih.gov/articles/PMC12041341/) confirms the pattern: consistent savings that beat any loyalty card.
-
-Let me put that in plain numbers. If your household spends $150 a week on groceries, a buying group cuts that to roughly $100. That’s $2,600 a year. Not pocket change. That’s a car payment, a plane ticket, or a semester of school supplies.
-
-You don’t need a commercial license to access these prices. You need volume. And volume can come from community. That’s the “wholesale is only for businesses” myth collapsing under the weight of simple arithmetic.
-
-![Community co-op members collect a bulk order](https://images.unsplash.com/photo-1578844251758-2e71da4c3c24?auto=format&fit=crop&w=1200&q=60)
-
-## The environmental impact of collective purchasing: less packaging, fewer trips
-
-The usual conversation about wholesale stops at money. But there’s a second benefit: fewer shipments and far less packaging. When you order retail, every small box arrives in a bigger box, wrapped in plastic tape, stuffed with filler. Hundreds of households ordering separately means hundreds of boxes, hundreds of meters of tape, and hundreds of air pillows — all for the same total volume of goods.
-
-Batch those orders into one pooled shipment, and the waste collapses. One pallet, one layer of stretch wrap, one consolidated delivery. The packaging footprint per unit drops drastically. This isn’t a side benefit. It’s the environmental impact of collective purchasing done right.
-
-MIT’s work on last-mile logistics shows that delivery packaging carries a large lifecycle footprint. The more separate shipments you create, the more packaging and fuel you burn. Group buying doesn’t just cut costs for households — it cuts the number of boxes entering the system, the tape sealing them, and the filler protecting them. If you care about waste, collective purchasing is one of the few changes that saves money and packaging at the same time.
-
-Freight people talk about “deadhead” — empty miles returning with no load. The same idea applies to consumer deliveries. Every underfilled van making separate trips to similar neighborhoods is a small environmental leak. Group buying seals that leak by consolidating routes and filling the cube. It’s the same principle as a city bus versus twenty single-occupancy cars. Volume drives efficiency in almost every mode.
-
-That’s the part nobody mentions when they say wholesale is only for businesses. The business-only rule isn’t protecting some special class of buyer. It’s protecting an inefficient default. When people pool their demand, they don’t just smash the MOQ. They also reduce waste, strengthen community ties, and turn a freight constraint into a collective advantage.
-
-The MOQ wall was never about whether you deserve wholesale. It was about whether you could move enough volume to make the logistics work. Thanks to group buying, you can. The wall comes down when you bring enough people to the table, and the table is bigger than you think. If you’re ready to see what wholesale pricing looks like with a community behind you, start or join a [buying pool on poolbuyr.com](https://poolbuyr.com/pools/create) — the coordination is the hard part, and your job is just to commit to your share.`,g=`---
+`,c=`---
 title: "How to Set Up Your First Group Buying Co-Op: A Step-by-Step Guide"
 author: "Emma Hartley"
 date: "2026-07-12"
@@ -283,5 +229,5 @@ None of this is complicated. It's a coordination framework any group of reasonab
 If you've been circling this idea for a while, this is your sign. Pick a staple, find three neighbours, agree on the rules, and make one collective purchase. The hardest part is the first message — and you've already read this far.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9gIhq7l0I6I" title="How to Start a Food Co-op: True Charity Program Overview" frameborder="0" allowfullscreen></iframe>
-`;function m(r){const n=r.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);if(!n)throw new Error("Missing frontmatter");const h=n[1],l=n[2].trim(),t={};let o="",e=[];for(const s of h.split(`
-`)){const i=s.match(/^(\w+):\s*(.*)/);if(i){if(o&&e.length&&(t[o]=e.length>1?e:e[0]),o=i[1],e=[],o==="tags")continue;const a=i[2].trim();a&&e.push(a.replace(/^"(.*)"$/,"$1"))}else if(o==="tags"){const a=s.match(/^\s+-\s+(.*)/);a&&e.push(a[1].trim())}else if(o){const a=s.trim();a&&e.push(a.replace(/^"(.*)"$/,"$1"))}}return o&&e.length&&(t[o]=e.length>1?e:e[0]),{meta:{title:String(t.title||""),author:String(t.author||""),date:String(t.date||""),slug:String(t.slug||""),excerpt:String(t.excerpt||""),tags:Array.isArray(t.tags)?t.tags:[],published:t.published!==!1},content:l}}export{g as _,p as a,d as b,c,u as d,m as p};
+`;function g(r){const n=r.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);if(!n)throw new Error("Missing frontmatter");const h=n[1],l=n[2].trim(),t={};let o="",e=[];for(const s of h.split(`
+`)){const i=s.match(/^(\w+):\s*(.*)/);if(i){if(o&&e.length&&(t[o]=e.length>1?e:e[0]),o=i[1],e=[],o==="tags")continue;const a=i[2].trim();a&&e.push(a.replace(/^"(.*)"$/,"$1"))}else if(o==="tags"){const a=s.match(/^\s+-\s+(.*)/);a&&e.push(a[1].trim())}else if(o){const a=s.trim();a&&e.push(a.replace(/^"(.*)"$/,"$1"))}}return o&&e.length&&(t[o]=e.length>1?e:e[0]),{meta:{title:String(t.title||""),author:String(t.author||""),date:String(t.date||""),slug:String(t.slug||""),excerpt:String(t.excerpt||""),tags:Array.isArray(t.tags)?t.tags:[],published:t.published!==!1},content:l}}export{c as _,d as a,p as b,u as c,g as p};
