@@ -1,45 +1,45 @@
 {
-  "updatedAt": "2026-08-07T08:39:18.651Z",
+  "updatedAt": "2026-09-07T00:00:00.000Z",
   "vendors": [
     {
+      "brand": "lidl",
       "domain": "lidl.de",
       "name": "Lidl",
-      "usageCount": 128
+      "usageCount": 195,
+      "countries": { "de": "lidl.de", "nl": "lidl.nl" }
     },
     {
+      "brand": "amazon",
       "domain": "amazon.de",
-      "name": "Amazon DE",
-      "usageCount": 112
+      "name": "Amazon",
+      "usageCount": 166,
+      "countries": { "de": "amazon.de", "nl": "amazon.nl" }
     },
     {
+      "brand": "bol",
       "domain": "bol.com",
       "name": "Bol.com",
       "usageCount": 96
     },
     {
+      "brand": "ah",
       "domain": "ah.nl",
       "name": "Albert Heijn",
-      "usageCount": 72
+      "usageCount": 72,
+      "countries": { "nl": "ah.nl" }
     },
     {
-      "domain": "lidl.nl",
-      "name": "Lidl Nederland",
-      "usageCount": 67
-    },
-    {
-      "domain": "amazon.nl",
-      "name": "Amazon NL",
-      "usageCount": 54
-    },
-    {
+      "brand": "jumbo",
       "domain": "jumbo.com",
       "name": "Jumbo",
       "usageCount": 45
     },
     {
+      "brand": "coolblue",
       "domain": "coolblue.nl",
       "name": "Coolblue",
-      "usageCount": 38
+      "usageCount": 38,
+      "countries": { "nl": "coolblue.nl" }
     }
   ]
 }
