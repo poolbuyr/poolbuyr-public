@@ -1,61 +1,45 @@
 {
-  "updatedAt": "2026-09-09T08:13:09.750Z",
+  "updatedAt": "2026-09-07T00:00:00.000Z",
   "vendors": [
     {
       "brand": "lidl",
-      "domain": "lidl.nl",
+      "domain": "lidl.de",
       "name": "Lidl",
       "usageCount": 195,
-      "logoUrl": "https://lidl.nl/cdn/assets/logos/1.0.1/lidl-logo-shop-cdn.svg",
-      "countries": {
-        "nl": "lidl.nl"
-      }
+      "countries": { "de": "lidl.de", "nl": "lidl.nl" }
     },
     {
       "brand": "amazon",
-      "domain": "amazon.nl",
+      "domain": "amazon.de",
       "name": "Amazon",
       "usageCount": 166,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=amazon.nl&sz=64",
-      "countries": {
-        "nl": "amazon.nl"
-      }
+      "countries": { "de": "amazon.de", "nl": "amazon.nl" }
     },
     {
       "brand": "bol",
       "domain": "bol.com",
       "name": "Bol.com",
-      "usageCount": 96,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=bol.com&sz=64",
-      "countries": {}
+      "usageCount": 96
     },
     {
       "brand": "ah",
       "domain": "ah.nl",
       "name": "Albert Heijn",
       "usageCount": 72,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=ah.nl&sz=64",
-      "countries": {
-        "nl": "ah.nl"
-      }
+      "countries": { "nl": "ah.nl" }
     },
     {
       "brand": "jumbo",
       "domain": "jumbo.com",
       "name": "Jumbo",
-      "usageCount": 45,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=jumbo.com&sz=64",
-      "countries": {}
+      "usageCount": 45
     },
     {
       "brand": "coolblue",
       "domain": "coolblue.nl",
       "name": "Coolblue",
       "usageCount": 38,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=coolblue.nl&sz=64",
-      "countries": {
-        "nl": "coolblue.nl"
-      }
+      "countries": { "nl": "coolblue.nl" }
     }
   ]
 }
