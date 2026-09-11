@@ -1,400 +1,45 @@
 {
-  "updatedAt": "2026-09-11T05:09:38.649Z",
+  "updatedAt": "2026-09-07T00:00:00.000Z",
   "vendors": [
     {
       "brand": "lidl",
-      "domain": "lidl.nl",
+      "domain": "lidl.de",
       "name": "Lidl",
       "usageCount": 195,
-      "logoUrl": "https://lidl.nl/cdn/assets/logos/1.0.1/lidl-logo-shop-cdn.svg",
-      "countries": {
-        "nl": "lidl.nl",
-        "de": "lidl.de"
-      }
+      "countries": { "de": "lidl.de", "nl": "lidl.nl" }
     },
     {
       "brand": "amazon",
-      "domain": "amazon.nl",
+      "domain": "amazon.de",
       "name": "Amazon",
       "usageCount": 166,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=amazon.nl&sz=64",
-      "countries": {
-        "nl": "amazon.nl"
-      }
+      "countries": { "de": "amazon.de", "nl": "amazon.nl" }
     },
     {
       "brand": "bol",
       "domain": "bol.com",
       "name": "Bol.com",
-      "usageCount": 96,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=bol.com&sz=64",
-      "countries": {}
+      "usageCount": 96
     },
     {
       "brand": "ah",
       "domain": "ah.nl",
       "name": "Albert Heijn",
       "usageCount": 72,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=ah.nl&sz=64",
-      "countries": {
-        "nl": "ah.nl"
-      }
+      "countries": { "nl": "ah.nl" }
     },
     {
       "brand": "jumbo",
       "domain": "jumbo.com",
       "name": "Jumbo",
-      "usageCount": 45,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=jumbo.com&sz=64",
-      "countries": {}
+      "usageCount": 45
     },
     {
       "brand": "coolblue",
       "domain": "coolblue.nl",
       "name": "Coolblue",
       "usageCount": 38,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=coolblue.nl&sz=64",
-      "countries": {
-        "nl": "coolblue.nl"
-      }
-    },
-    {
-      "brand": "intratuin",
-      "domain": "intratuin.nl",
-      "name": "Intratuin",
-      "usageCount": 0,
-      "logoUrl": "https://www.intratuin.nl/media/favicon/default/favicon_1.ico",
-      "countries": {
-        "nl": "intratuin.nl"
-      }
-    },
-    {
-      "brand": "crisp",
-      "domain": "crisp.nl",
-      "name": "Crisp online supermarkt",
-      "usageCount": 0,
-      "logoUrl": "https://crisp.nl/asset/5xWFwjBoOumW2Vzx",
-      "countries": {
-        "nl": "crisp.nl"
-      }
-    },
-    {
-      "brand": "action",
-      "domain": "action.com",
-      "name": "Action",
-      "usageCount": 0,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=action.com&sz=64",
-      "countries": {}
-    },
-    {
-      "brand": "beterbed",
-      "domain": "beterbed.nl",
-      "name": "Beter Bed",
-      "usageCount": 0,
-      "logoUrl": "https://beterbed.nl/favicon.ico",
-      "countries": {
-        "nl": "beterbed.nl"
-      }
-    },
-    {
-      "brand": "livera",
-      "domain": "livera.nl",
-      "name": "Livera",
-      "usageCount": 0,
-      "logoUrl": "https://livera.nl/favicon.ico",
-      "countries": {
-        "nl": "livera.nl"
-      }
-    },
-    {
-      "brand": "futurumshop",
-      "domain": "futurumshop.nl",
-      "name": "FUTURUMSHOP",
-      "usageCount": 0,
-      "logoUrl": "https://futurumshop.nl/favicon-new.svg",
-      "countries": {
-        "nl": "futurumshop.nl"
-      }
-    },
-    {
-      "brand": "orientalwebshop",
-      "domain": "orientalwebshop.nl",
-      "name": "Human verification",
-      "usageCount": 0,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=orientalwebshop.nl&sz=64",
-      "countries": {
-        "nl": "orientalwebshop.nl"
-      }
-    },
-    {
-      "brand": "jysk",
-      "domain": "jysk.nl",
-      "name": "JYSK",
-      "usageCount": 0,
-      "logoUrl": "https://jysk.nl/themes/custom/jysk_bootstrap/favicon.ico",
-      "countries": {
-        "nl": "jysk.nl"
-      }
-    },
-    {
-      "brand": "gamma",
-      "domain": "gamma.nl",
-      "name": "GAMMA",
-      "usageCount": 0,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=gamma.nl&sz=64",
-      "countries": {
-        "nl": "gamma.nl"
-      }
-    },
-    {
-      "brand": "zara",
-      "domain": "zara.com",
-      "name": "&nbsp;",
-      "usageCount": 0,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=zara.com&sz=64",
-      "countries": {
-        "nl": "zara.com"
-      }
-    },
-    {
-      "brand": "megekko",
-      "domain": "megekko.nl",
-      "name": "Megekko",
-      "usageCount": 0,
-      "logoUrl": "https://megekko.nl/images/appicon/Icon.png",
-      "countries": {
-        "nl": "megekko.nl"
-      }
-    },
-    {
-      "brand": "nike",
-      "domain": "nike.com",
-      "name": "Nike.com",
-      "usageCount": 0,
-      "logoUrl": "https://www.nike.com/favicon.ico?v=1",
-      "countries": {
-        "nl": "nike.com"
-      }
-    },
-    {
-      "brand": "decathlon",
-      "domain": "decathlon.nl",
-      "name": "Decathlon",
-      "usageCount": 0,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=decathlon.nl&sz=64",
-      "countries": {
-        "nl": "decathlon.nl"
-      }
-    },
-    {
-      "brand": "12gobiking",
-      "domain": "12gobiking.nl",
-      "name": "12GO Biking",
-      "usageCount": 0,
-      "logoUrl": "https://www.12gobiking.nl/static/version1788864144/frontend/GOBiking/default/nl_NL/Magento_Theme/icons/favicon.ico",
-      "countries": {
-        "nl": "12gobiking.nl"
-      }
-    },
-    {
-      "brand": "plnts",
-      "domain": "plnts.com",
-      "name": "PLNTS.com",
-      "usageCount": 0,
-      "logoUrl": "https://plnts.com/favicon.ico",
-      "countries": {
-        "nl": "plnts.com"
-      }
-    },
-    {
-      "brand": "wehkamp",
-      "domain": "wehkamp.nl",
-      "name": "Wehkamp",
-      "usageCount": 0,
-      "logoUrl": "https://resources.wehkamp.nl/latest/images/favicon/favicon-16.png",
-      "countries": {
-        "nl": "wehkamp.nl"
-      }
-    },
-    {
-      "brand": "nl.tommy",
-      "domain": "nl.tommy.com",
-      "name": "Tommy Hilfiger®",
-      "usageCount": 0,
-      "logoUrl": "https://nl.tommy.com/prod/live/th/shared-assets/active/icons/th/TH_48x48.png",
-      "countries": {
-        "nl": "nl.tommy.com"
-      }
-    },
-    {
-      "brand": "fonq",
-      "domain": "fonq.nl",
-      "name": "fonQ",
-      "usageCount": 0,
-      "logoUrl": "https://cdn.etrias.nl/media/cache/favicon/content/favicons/favicon.jpg",
-      "countries": {
-        "nl": "fonq.nl"
-      }
-    },
-    {
-      "brand": "azerty",
-      "domain": "azerty.nl",
-      "name": "azerty",
-      "usageCount": 0,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=azerty.nl&sz=64",
-      "countries": {
-        "nl": "azerty.nl"
-      }
-    },
-    {
-      "brand": "sissy-boy",
-      "domain": "sissy-boy.com",
-      "name": "Sissy Boy",
-      "usageCount": 0,
-      "logoUrl": "https://sissy-boy.com/apple-touch-icon.png",
-      "countries": {
-        "nl": "sissy-boy.com"
-      }
-    },
-    {
-      "brand": "bodyandfit",
-      "domain": "bodyandfit.com",
-      "name": "Body & Fit",
-      "usageCount": 0,
-      "logoUrl": "https://www.bodyandfit.com/cdn/shop/files/B_F-favicon.png?crop=center&height=48&v=1785943896&width=48",
-      "countries": {
-        "nl": "bodyandfit.com"
-      }
-    },
-    {
-      "brand": "cameranu",
-      "domain": "cameranu.nl",
-      "name": "cameranu",
-      "usageCount": 0,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=cameranu.nl&sz=64",
-      "countries": {
-        "nl": "cameranu.nl"
-      }
-    },
-    {
-      "brand": "iciparisxl",
-      "domain": "iciparisxl.nl",
-      "name": "ICI PARIS XL",
-      "usageCount": 0,
-      "logoUrl": "https://iciparisxl.nl/favicon.ico",
-      "countries": {
-        "nl": "iciparisxl.nl"
-      }
-    },
-    {
-      "brand": "plutosport",
-      "domain": "plutosport.nl",
-      "name": "plutosport",
-      "usageCount": 0,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=plutosport.nl&sz=64",
-      "countries": {
-        "nl": "plutosport.nl"
-      }
-    },
-    {
-      "brand": "notino",
-      "domain": "notino.nl",
-      "name": "notino",
-      "usageCount": 0,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=notino.nl&sz=64",
-      "countries": {
-        "nl": "notino.nl"
-      }
-    },
-    {
-      "brand": "debijenkorf",
-      "domain": "debijenkorf.nl",
-      "name": "debijenkorf",
-      "usageCount": 0,
-      "logoUrl": "https://www.google.com/s2/favicons?domain=debijenkorf.nl&sz=64",
-      "countries": {
-        "nl": "debijenkorf.nl"
-      }
-    },
-    {
-      "brand": "kwantum",
-      "domain": "kwantum.nl",
-      "name": "Kwantum",
-      "usageCount": 0,
-      "logoUrl": "https://kwantum.nl/images/favicons/apple-touch-icon.png",
-      "countries": {
-        "nl": "kwantum.nl"
-      }
-    },
-    {
-      "brand": "scotchandsoda",
-      "domain": "scotchandsoda.com",
-      "name": "Scotch & Soda",
-      "usageCount": 0,
-      "logoUrl": "https://www.scotchandsoda.com/cdn/shop/files/Scotch_Soda_Identity_031121_Icon_Black_on_tile_Icon_Black.jpg?crop=center&height=48&v=1787584446&width=48",
-      "countries": {
-        "nl": "scotchandsoda.com"
-      }
-    },
-    {
-      "brand": "vanharen",
-      "domain": "vanharen.nl",
-      "name": "vanHaren",
-      "usageCount": 0,
-      "logoUrl": "https://vanharen.nl/assets/concepts/VHA/favicon.ico",
-      "countries": {
-        "nl": "vanharen.nl"
-      }
-    },
-    {
-      "brand": "zalando",
-      "domain": "zalando.nl",
-      "name": "Zalando",
-      "usageCount": 0,
-      "logoUrl": "https://mosaic01.ztat.net/zds/assets/favicon/zalando-app-touch-icon-180-lagom-v2.png",
-      "countries": {
-        "nl": "zalando.nl"
-      }
-    },
-    {
-      "brand": "asadventure",
-      "domain": "asadventure.com",
-      "name": "A.S.Adventure",
-      "usageCount": 0,
-      "logoUrl": "https://www.asadventure.com/content/dam/asadventure/logo/default.png",
-      "countries": {
-        "nl": "asadventure.com"
-      }
-    },
-    {
-      "brand": "zeeman",
-      "domain": "zeeman.com",
-      "name": "Zeeman",
-      "usageCount": 0,
-      "logoUrl": "https://zeeman.com/_static/favicon/favicon.ico",
-      "countries": {
-        "nl": "zeeman.com"
-      }
-    },
-    {
-      "brand": "vidaxl",
-      "domain": "vidaxl.nl",
-      "name": "vidaXL",
-      "usageCount": 0,
-      "logoUrl": "https://vidaxl.nl/on/demandware.static/Sites-vidaxl-nl-Site/-/default/dw130044e0/images/favicons/favicon-196x196.png",
-      "countries": {
-        "nl": "vidaxl.nl"
-      }
-    },
-    {
-      "brand": "toolstation",
-      "domain": "toolstation.nl",
-      "name": "toolstation",
-      "usageCount": 0,
-      "logoUrl": "https://cdn.toolstation.nl/website/images/toolstation.svg",
-      "countries": {
-        "nl": "toolstation.nl"
-      }
+      "countries": { "nl": "coolblue.nl" }
     }
   ]
 }
