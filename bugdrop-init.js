@@ -6,6 +6,13 @@
   window._bugdropLoaded = true;
   window.loadBugDrop = function () {
     if (window._bugdropStarted) return;
+    // Never inside the vendor embed. That page is rendered in an iframe on a
+    // merchant's storefront, where this launcher would float a "Suggest" button
+    // over their shop's pooling UI — and a report captured in a third-party
+    // frame is misattributed anyway. Skipped on the embed route too, since it
+    // is a merchant-facing surface, not ours.
+    if (window.self !== window.top) return;
+    if (window.location.pathname.indexOf('/vendor/embed') === 0) return;
     window._bugdropStarted = true;
     // Mirror the i18n language resolution (profile → guest storage → browser)
     // so the floating widget matches the active UI language. i18next isn't
