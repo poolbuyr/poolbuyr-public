@@ -51,6 +51,10 @@
   function embedUrl() {
     var url = app + '/vendor/embed?key=' + encodeURIComponent(key);
     if (demo) url += '&demo=1';
+    // A shop usually knows the shopper's postcode by checkout time; passing it
+    // here skips the prompt entirely.
+    var postal = (script.getAttribute('data-postal') || '').replace(/\D/g, '').slice(0, 4);
+    if (postal.length === 4) url += '&postal=' + postal;
     return url;
   }
 
@@ -98,6 +102,27 @@
     if (event.data.type === 'resize' && frame && typeof event.data.height === 'number') {
       var h = Math.max(200, Math.min(1200, event.data.height));
       frame.style.height = h + 'px';
+    }
+    // The shopper is joining a pool. Tier 2: if the shop defined a cart hook we
+    // let it take over, and ack so the embed cancels its own navigation. With
+    // no hook (or a hook that throws) we do the plain thing and send the top
+    // window to the pool, which is what the embed would have done itself.
+    if (event.data.type === 'handoff') {
+      var handled = false;
+      var hook = window.PoolbuyrWidget.buildCart;
+      if (typeof hook === 'function') {
+        try {
+          hook(event.data.items || [], { url: event.data.url, poolId: event.data.poolId });
+          handled = true;
+        } catch (e) {
+          handled = false;
+        }
+      }
+      if (handled) {
+        if (frame) frame.contentWindow.postMessage({ source: 'poolbuyr-embed', type: 'handoff-taken' }, app);
+      } else if (event.data.url) {
+        window.top.location.href = event.data.url;
+      }
     }
   });
 
