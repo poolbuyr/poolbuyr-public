@@ -11,34 +11,35 @@
     "handoff": { "tier": 1, "platform": "shopify", "hasOrderEndpoint": false },
     "testMode": true
   },
+  "_pools_note": "Each pool names a product the demo storefront actually sells, and its target is the number of units that clears the €75 free-shipping threshold at that product's price: throws €24.95 → 4 units (€99.80, so 3 claimed = €74.85, one short); cushion pairs €32.00 → 3 (€96.00); scarves €18.50 → 5 (€92.50). The widget only shows counts, so the arithmetic is not on screen — but a pool for a product the shop does not sell is exactly the sort of thing a merchant notices.",
   "pools": [
     {
       "id": "demo-pool-1",
-      "title": "Wool throws for the winter",
+      "title": "Wool throws",
       "status": "open",
       "deadline": "2026-10-04T18:00:00.000Z",
-      "currentQuantity": 6,
-      "targetQuantity": 8,
+      "currentQuantity": 3,
+      "targetQuantity": 4,
       "memberCount": 3,
       "distanceKm": 1.2
     },
     {
       "id": "demo-pool-2",
-      "title": "Blankets + cushion covers",
+      "title": "Cushion cover pairs",
       "status": "open",
       "deadline": "2026-10-11T18:00:00.000Z",
-      "currentQuantity": 4,
-      "targetQuantity": 10,
+      "currentQuantity": 2,
+      "targetQuantity": 3,
       "memberCount": 2,
       "distanceKm": 2.8
     },
     {
       "id": "demo-pool-3",
-      "title": "Merino scarves, single order",
+      "title": "Merino scarves",
       "status": "open",
       "deadline": "2026-09-28T18:00:00.000Z",
-      "currentQuantity": 9,
-      "targetQuantity": 9,
+      "currentQuantity": 4,
+      "targetQuantity": 5,
       "memberCount": 5,
       "distanceKm": 4.1
     }
