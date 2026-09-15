@@ -1,18 +1,20 @@
 // BugDrop widget loader — external file (not inline) so the SPA can ship a CSP
-// without 'unsafe-inline' for script-src. Guarded so PasswordGate + the
-// sessionStorage auto-load can't append the widget script twice.
+// without 'unsafe-inline' for script-src. Guarded so PasswordGate can't append
+// the widget script twice.
 (function () {
   if (window._bugdropLoaded) return;
   window._bugdropLoaded = true;
   window.loadBugDrop = function () {
     if (window._bugdropStarted) return;
-    // Never inside the vendor embed. That page is rendered in an iframe on a
-    // merchant's storefront, where this launcher would float a "Suggest" button
-    // over their shop's pooling UI — and a report captured in a third-party
-    // frame is misattributed anyway. Skipped on the embed route too, since it
-    // is a merchant-facing surface, not ours.
+    // Never on the vendor surface. Those pages are what a merchant sees when
+    // they are evaluating us — and `/vendor/embed` is rendered in an iframe on
+    // their own storefront, where this launcher would float a "Suggest" button
+    // over their shop's pooling UI (a report captured in a third-party frame is
+    // misattributed anyway). A plain prefix test: every /vendor route is
+    // merchant-facing, and PasswordGate loads this on *every* route, so gating
+    // on the single embed path let the demo and the guide keep the button.
     if (window.self !== window.top) return;
-    if (window.location.pathname.indexOf('/vendor/embed') === 0) return;
+    if (window.location.pathname.indexOf('/vendor') === 0) return;
     window._bugdropStarted = true;
     // Mirror the i18n language resolution (profile → guest storage → browser)
     // so the floating widget matches the active UI language. i18next isn't
@@ -44,7 +46,8 @@
     s.setAttribute('data-welcome', 'never');
     document.body.appendChild(s);
   };
-  if (sessionStorage.getItem('poolbuyr_access_granted') === 'true') {
-    window.loadBugDrop();
-  }
+  // No auto-load here any more. This used to fire when the frontend-only gate
+  // had written `poolbuyr_access_granted`; that key died with the client-side
+  // gate and nothing has written it since, so the check was unreachable.
+  // PasswordGate calls loadBugDrop() once the wall is actually open.
 })();
