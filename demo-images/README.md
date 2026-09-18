@@ -1,7 +1,7 @@
 # Demo product photography
 
-Photographs for the pretend storefront at `/vendor/demo` — the shop owner
-"Wolweverij Noord" and its wool catalogue.
+Photographs for the pretend storefront at `/vendor/demo` — "Studio Vilt", the
+fictional felt-and-wool studio whose catalogue the demo sells.
 
 These are **demo assets only**. They are not products we sell, and nothing in
 the app references them by anything other than a hardcoded filename.
