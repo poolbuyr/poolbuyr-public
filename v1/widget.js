@@ -6,9 +6,13 @@
  *   <script src="https://cdn.poolbuyr.com:444/v1/widget.js"
  *           data-key="pk_live_…" data-app="https://poolbuyr.com" async></script>
  *
- * What it does: renders the pooling UI in a sandboxed iframe pointed at
+ * What it does: renders the pooling UI in a cross-origin iframe pointed at
  * `<data-app>/vendor/embed`, and exposes `window.PoolbuyrWidget` so a shop can
- * hand over its cart and a location.
+ * hand over its cart and a location. Cross-origin, not `sandbox`ed — the
+ * attribute is deliberately not set, because the frame loads our own app and
+ * should have our own origin's privileges. What separates it from the merchant
+ * is the origin boundary, not a sandbox: this file runs on their page and can
+ * touch it, the frame cannot.
  *
  * Rules this file must never break:
  *  - It runs on someone else's checkout page. Everything is async and every
