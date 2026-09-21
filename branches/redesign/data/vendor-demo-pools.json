@@ -1,0 +1,61 @@
+{
+  "_comment": "Fixture for the vendor demo (/vendor/demo). Served statically from GitHub Pages so the demo is deterministic, offline and cannot touch real pools. Shape mirrors GET /widget/config and GET /widget/pools exactly — if those change, change this too.",
+  "config": {
+    "brand": {
+      "name": "Studio Vilt",
+      "logoUrl": null,
+      "primaryDomain": "studiovilt.nl",
+      "domains": [
+        "studiovilt.nl",
+        "studio-vilt.be"
+      ]
+    },
+    "shipping": {
+      "shippingCost": 6.95,
+      "freeShippingFrom": 75
+    },
+    "handoff": {
+      "tier": 1,
+      "platform": "shopify",
+      "hasOrderEndpoint": false
+    },
+    "testMode": true
+  },
+  "_pools_note": "Each pool names something the demo storefront actually sells, and its target is the number of units that clears the €75 free-shipping threshold at that product's price: wool socks €18.50 → 5 units (€92.50, so 3 claimed = €55.50 is one pair short); cushion covers €45.00 → 2 (€90.00); wool scarves €39.95 → 2 (€79.90). The widget only shows counts, so the arithmetic is not on screen — but a pool for a product the shop does not sell is exactly the sort of thing a merchant notices.",
+  "pools": [
+    {
+      "id": "demo-pool-1",
+      "title": "Wool socks",
+      "status": "open",
+      "deadline": "2026-10-04T18:00:00.000Z",
+      "currentQuantity": 3,
+      "targetQuantity": 5,
+      "memberCount": 3,
+      "distanceKm": 1.2
+    },
+    {
+      "id": "demo-pool-2",
+      "title": "Cushion covers",
+      "status": "open",
+      "deadline": "2026-10-11T18:00:00.000Z",
+      "currentQuantity": 1,
+      "targetQuantity": 2,
+      "memberCount": 2,
+      "distanceKm": 2.8
+    },
+    {
+      "id": "demo-pool-3",
+      "title": "Wool scarves",
+      "status": "open",
+      "deadline": "2026-09-28T18:00:00.000Z",
+      "currentQuantity": 1,
+      "targetQuantity": 2,
+      "memberCount": 2,
+      "distanceKm": 4.1
+    }
+  ],
+  "totals": {
+    "pools": 3,
+    "buyers": 9
+  }
+}
