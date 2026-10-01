@@ -38,8 +38,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/assets/index-BEnRAtGp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CXs2uxd8.css">
+    <script type="module" crossorigin src="/assets/index-CzMTn5HL.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B5tyAEwx.css">
   <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
   <body class="bg-earth-50 text-gray-900">
     <div id="root"></div>
@@ -64,11 +64,50 @@
         font-size: 10.5px !important;
       }
       /* The widget parks its trigger at 25vh on the right edge, which on a
-         phone sits over the map controls and the first result card, and the
-         fixed bottom tab bar owns the bottom strip. Lift it clear of both. */
+         phone sits over the map controls and the first result card. `top: auto`
+         is the fix: an earlier `bottom` override alone could not move an element
+         that still carried the widget's own `top`, so the pill stayed on top of
+         the hero CTA ("Start a group") and the Discover cards. */
       @media (max-width: 767px) {
         .bd-trigger {
+          /* The widget parks its trigger at 25vh on the right edge, which on a
+             phone sits over the map controls and the first result card. `top:
+             auto` is the fix: a `bottom` override alone could not move an
+             element that still carried the widget's own `top`. The 640px rule
+             below then makes it invisible at rest, because no fixed corner is
+             reliably empty on a scrolling page. */
+          top: auto !important;
           bottom: calc(76px + env(safe-area-inset-bottom)) !important;
+        }
+      }
+      /* Small phones: the pill is a feedback affordance, not a control the page
+         is competing with, and any fixed corner lands on real content on a long
+         scrolling page — the products card on a pool page, the closing-soon row
+         on Discover. Rather than chase a corner that is always empty (there
+         isn't one), it is hidden until touched.
+
+         `visibility: hidden` rather than `opacity: 0`: the widget paints its
+         label and drag-handle children with their own opacity, so a transparent
+         parent still showed a solid pill. `visibility` actually removes it from
+         paint while `pointer-events` stays on (visibility:hidden elements still
+         receive events), so the beta user can still reach it by tapping where it
+         sits — and hovering or focusing it restores it visibly. */
+      @media (max-width: 640px) {
+        .bd-trigger {
+          visibility: hidden !important;
+          padding: 1px 5px !important;
+          font-size: 10px !important;
+          bottom: calc(64px + env(safe-area-inset-bottom)) !important;
+          right: 4px !important;
+        }
+        .bd-trigger:hover,
+        .bd-trigger:focus,
+        .bd-trigger:focus-within,
+        .bd-trigger:active {
+          visibility: visible !important;
+        }
+        .bd-trigger-label {
+          font-size: 10px !important;
         }
       }
     </style>
