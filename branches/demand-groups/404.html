@@ -84,13 +84,17 @@
          is competing with, and any fixed corner lands on real content on a long
          scrolling page — the products card on a pool page, the closing-soon row
          on Discover. Rather than chase a corner that is always empty (there
-         isn't one), it is near-invisible until touched: fully transparent at
-         rest, fully opaque on hover/focus/active, and still clickable
-         throughout. `pointer-events` stays on because the widget is how a beta
-         user reports a problem at all. */
+         isn't one), it is hidden until touched.
+
+         `visibility: hidden` rather than `opacity: 0`: the widget paints its
+         label and drag-handle children with their own opacity, so a transparent
+         parent still showed a solid pill. `visibility` actually removes it from
+         paint while `pointer-events` stays on (visibility:hidden elements still
+         receive events), so the beta user can still reach it by tapping where it
+         sits — and hovering or focusing it restores it visibly. */
       @media (max-width: 640px) {
         .bd-trigger {
-          opacity: 0 !important;
+          visibility: hidden !important;
           padding: 1px 5px !important;
           font-size: 10px !important;
           bottom: calc(64px + env(safe-area-inset-bottom)) !important;
@@ -98,8 +102,9 @@
         }
         .bd-trigger:hover,
         .bd-trigger:focus,
+        .bd-trigger:focus-within,
         .bd-trigger:active {
-          opacity: 1 !important;
+          visibility: visible !important;
         }
         .bd-trigger-label {
           font-size: 10px !important;
